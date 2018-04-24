@@ -2,7 +2,7 @@ package edu.handong.csee.java.example.inheritance;
 
 public class PolymorphismDemonstrator {
 	public static void main(String[] args) {
-		Person[] people = new Person[4];
+		Person[] people = new Person[5];
 
 		people[0] = new Undergraduate("Cotty, Manny", 4910, 1);
 		people[1] = new Undergraduate("Kick, Anita", 9931, 2);
@@ -11,6 +11,7 @@ public class PolymorphismDemonstrator {
 		people[4] = new Faculty("JeongHoon, Jo", 3601);
 
 		for (Person p : people) {
+			//if(p instanceof Student)
 			p.writeOutput();
 			System.out.println();
 		}
